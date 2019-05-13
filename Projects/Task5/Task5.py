@@ -44,7 +44,7 @@ class Digit:
 
     def to_string(self):
         length_of_number = len(str(self.number))
-        print(length_of_number)
+        
         if self.number in self.digits:
             print(self.digits.get(int(self.number)))
             
