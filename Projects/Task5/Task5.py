@@ -26,10 +26,10 @@ class Digit:
         self.ending = "тысяч"
         
 
-    def hundreds_calculation(self):
-        last_digit = self.number % 10
-        hund = self.number // 100
-        dec = self.number // 10
+    def hundreds_calculation(self, number):
+        last_digit = number % 10
+        hund = number // 100
+        dec = number // 10
         count_of_dec = dec % 10
         if count_of_dec != 1:
             return re.sub(r'\s+', ' ',(str(self.hundreds.get(hund)) + " " \
@@ -61,35 +61,17 @@ class Digit:
                   + str(self.digits.get(last_digit)).lower())
 
         elif len(str(self.number)) == 3:
-            print(self.hundreds_calculation())
+            print(self.hundreds_calculation(self.number))
             
         elif len(str(self.number)) == 4:
-            last_digit = self.number % 10
-            print(last_digit)
-            hund = self.number // 10
-            count_of_hund = hund % 10
-            print(count_of_hund)
-            dec = self.number // 10
-            count_of_dec = dec % 10
-            print(count_of_dec)
             thous = self.number // 1000
-            print(thous)
-            if count_of_dec != 1:
-                return re.sub(r'\s+', ' ',(str(self.thousands.get(thous))+" "\
-                                           +str(self.hundreds.get(count_of_hund)) + " " \
-                                           + str(self.decimals.get(count_of_dec)).lower()+ " "\
-                                           + str(self.digits.get(last_digit)).lower()))
-            
-            else:
-                return re.sub(r'\s+', ' ',(str(self.thousands.get(thous))+" "\
-                                           +str(self.hundreds.get(count_of_hund)) + " " \
-                                           + str(self.dec_digits.get(int(str(count_of_dec)))).lower()+ " "\
-                                           + str(self.digits.get(last_digit)).lower()))
+            return(str(self.thousands.get(thous)) + " "\
+                   + self.hundreds_calculation(self.number % 1000).lower())
                 
 
 
        
 
 if __name__ == "__main__":
-    digits = Digit(3441)
+    digits = Digit(4441)
     digits.to_string()
