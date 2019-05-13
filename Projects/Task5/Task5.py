@@ -37,13 +37,14 @@ class Digit:
                    + str(self.digits.get(last_digit)).lower()))
         
         else:
-            return(str(self.hundreds.get(hund)) + " " \
-                   + str(self.dec_digits.get(int(str(count_of_dec)+str(last_digit)))).lower())
+            return str(self.hundreds.get(hund)) + " " \
+                   + str(self.dec_digits.get(int(str(count_of_dec)+str(last_digit)))).lower()
 
 
 
     def to_string(self):
-        
+        length_of_number = len(str(self.number))
+        print(length_of_number)
         if self.number in self.digits:
             print(self.digits.get(int(self.number)))
             
@@ -54,18 +55,18 @@ class Digit:
             dec = self.number // 10
             print(self.decimals.get(dec))
             
-        elif len(str(self.number)) == 2:
+        elif length_of_number == 2:
             last_digit = self.number % 10
             dec = self.number // 10
             print(str(self.decimals.get(dec))+" "\
                   + str(self.digits.get(last_digit)).lower())
 
-        elif len(str(self.number)) == 3:
+        elif length_of_number == 3:
             print(self.hundreds_calculation(self.number))
             
-        elif len(str(self.number)) == 4:
+        elif length_of_number == 4:
             thous = self.number // 1000
-            return(str(self.thousands.get(thous)) + " "\
+            print(str(self.thousands.get(thous)) + " "\
                    + self.hundreds_calculation(self.number % 1000).lower())
                 
 
@@ -73,5 +74,5 @@ class Digit:
        
 
 if __name__ == "__main__":
-    digits = Digit(4441)
+    digits = Digit(1234)
     digits.to_string()
