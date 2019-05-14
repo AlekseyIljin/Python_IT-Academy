@@ -44,9 +44,11 @@ class Digit:
 
     def to_string(self):
         length_of_number = len(str(self.number))
-        
         if self.number in self.digits:
-            print(self.digits.get(int(self.number)))
+            if self.number == 0:
+                print("Ноль")
+            else:
+                print(self.digits.get(int(self.number)))
             
         elif self.number in self.dec_digits:
             print(self.dec_digits.get(self.number))
@@ -66,13 +68,28 @@ class Digit:
             
         elif length_of_number == 4:
             thous = self.number // 1000
-            print(str(self.thousands.get(thous)) + " "\
-                   + self.hundreds_calculation(self.number % 1000).lower())
-                
+            print(self.thousands.get(thous) + " "\
+                  + self.hundreds_calculation(self.number % 1000).lower())
+        elif length_of_number == 5:
+            thous = self.number // 1000
+            last_num_of_thous = thous % 10
+            dec_of_thous = thous // 10
+            if thous in self.dec_digits:
+                print(str(self.dec_digits.get(thous))+ " " \
+                      + self.ending + " " \
+                      + self.hundreds_calculation(self.number % 1000).lower())
+            elif dec_of_thous in self.decimals and last_num_of_thous != 0:
+                print(self.decimals.get(dec_of_thous)+ " " \
+                      + self.thousands.get(last_num_of_thous).lower() + " "\
+                      + self.hundreds_calculation(self.number % 1000).lower())
+            else:
+                print(self.decimals.get(dec_of_thous)+ " " \
+                      + self.ending + " " \
+                      + self.hundreds_calculation(self.number % 1000).lower())
 
 
        
 
 if __name__ == "__main__":
-    digits = Digit(1234)
+    digits = Digit(0)
     digits.to_string()
