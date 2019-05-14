@@ -22,7 +22,7 @@ class Digit:
         self.thousands = {0:"", 1:"Одна тысяча", 2:"Две тысячи", 3:"Три тысячи",\
                           4:"Четыре тысячи", 5:"Пять тысяч", 6:"Шесть тысяч",\
                           7:"Семь тысяч", 8:"Восемь тысяч", 9:"Девять тысяч"}
-
+        
         self.ending = "тысяч"
         
 
@@ -32,64 +32,72 @@ class Digit:
         dec = number // 10
         count_of_dec = dec % 10
         if count_of_dec != 1:
-            return re.sub(r'\s+', ' ',(str(self.hundreds.get(hund)) + " " \
-                   + str(self.decimals.get(count_of_dec)).lower()+ " "\
-                   + str(self.digits.get(last_digit)).lower()))
+            return re.sub(r'\s+', ' ',(self.hundreds.get(hund) + " " \
+                   + self.decimals.get(count_of_dec).lower() + " " \
+                   + self.digits.get(last_digit).lower()))
         
         else:
-            return str(self.hundreds.get(hund)) + " " \
-                   + str(self.dec_digits.get(int(str(count_of_dec)+str(last_digit)))).lower()
+            decimal = int(str(count_of_dec)+str(last_digit))
+            return self.hundreds.get(hund) + " " \
+                   + self.dec_digits.get(decimal).lower()
 
 
 
     def to_string(self):
-        length_of_number = len(str(self.number))
-        if self.number in self.digits:
-            if self.number == 0:
-                print("Ноль")
+        number = self.number
+        
+        
+        
+        
+        
+        length_of_number = len(str(number))
+        if number in self.digits:
+            if number == 0:
+                return("Ноль")
             else:
-                print(self.digits.get(int(self.number)))
+                return(self.digits.get(number))
             
-        elif self.number in self.dec_digits:
-            print(self.dec_digits.get(self.number))
+        elif number in self.dec_digits:
+            return(self.dec_digits.get(number))
             
-        elif self.number in self.decimals:
-            dec = self.number // 10
-            print(self.decimals.get(dec))
+        elif number in self.decimals:
+            dec = number // 10
+            return(self.decimals.get(dec))
             
         elif length_of_number == 2:
-            last_digit = self.number % 10
-            dec = self.number // 10
-            print(str(self.decimals.get(dec))+" "\
-                  + str(self.digits.get(last_digit)).lower())
+            last_digit = number % 10
+            dec = number // 10
+            return(self.decimals.get(dec) + " " \
+                  + self.digits.get(last_digit).lower())
 
         elif length_of_number == 3:
-            print(self.hundreds_calculation(self.number))
+            return(self.hundreds_calculation(number))
             
         elif length_of_number == 4:
-            thous = self.number // 1000
-            print(self.thousands.get(thous) + " "\
-                  + self.hundreds_calculation(self.number % 1000).lower())
+            thous = number // 1000
+            return(self.thousands.get(thous) + " " \
+                  + self.hundreds_calculation(number % 1000).lower())
         elif length_of_number == 5:
-            thous = self.number // 1000
+            thous = number // 1000
             last_num_of_thous = thous % 10
             dec_of_thous = thous // 10
             if thous in self.dec_digits:
-                print(str(self.dec_digits.get(thous))+ " " \
+                return(self.dec_digits.get(thous) + " " \
                       + self.ending + " " \
-                      + self.hundreds_calculation(self.number % 1000).lower())
+                      + self.hundreds_calculation(number % 1000).lower())
+
             elif dec_of_thous in self.decimals and last_num_of_thous != 0:
-                print(self.decimals.get(dec_of_thous)+ " " \
-                      + self.thousands.get(last_num_of_thous).lower() + " "\
-                      + self.hundreds_calculation(self.number % 1000).lower())
+                return(self.decimals.get(dec_of_thous) + " " \
+                      + self.thousands.get(last_num_of_thous).lower() + " " \
+                      + self.hundreds_calculation(number % 1000).lower())
             else:
-                print(self.decimals.get(dec_of_thous)+ " " \
+                return(self.decimals.get(dec_of_thous)+ " " \
                       + self.ending + " " \
-                      + self.hundreds_calculation(self.number % 1000).lower())
+                      + self.hundreds_calculation(number % 1000).lower())
 
 
        
 
 if __name__ == "__main__":
-    digits = Digit(0)
-    digits.to_string()
+    digits = Digit(1234)
+    print(digits.to_string())
