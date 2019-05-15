@@ -105,5 +105,10 @@ class Digit:
 if __name__ == "__main__":
     while True:
         number = input("Enter the number for enterpreter please:\n")
-        digits = Digit(number)
-        print(digits.to_string())
+        quiting = ("q","quit","exit")
+        if number in quiting:
+            exit()
+        else:
+            digits = Digit(number)
+            print(digits.to_string())
+        
