@@ -1,4 +1,5 @@
 import math
+import re
 class Triangle:
 
     def __init__(self, name, a, b, c):
@@ -9,9 +10,7 @@ class Triangle:
             self.b = float(b.replace(",", "."))
             self.c = float(c.replace(",", "."))
         else:
-            self.a = 0
-            self.b = 0
-            self.c = 0
+            raise ValueError ("Invalid sides, triangle can't exist")
 
 
     def square_calc(self):

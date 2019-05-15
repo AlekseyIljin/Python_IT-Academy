@@ -2,7 +2,8 @@ import re
 
 class Digit:
     def __init__ (self, number):
-        self.number = number
+        self.number = int(number)
+        
         self.digits = {0:"", 1:"Один", 2:"Два", 3:"Три", 4:"Четыре", \
                        5:"Пять", 6:"Шесть", 7:"Семь", 8:"Восемь", 9:"Девять"}
         
@@ -24,6 +25,9 @@ class Digit:
                           7:"Семь тысяч", 8:"Восемь тысяч", 9:"Девять тысяч"}
         
         self.ending = "тысяч"
+
+        
+            
         
 
     def hundreds_calculation(self, number):
@@ -99,5 +103,7 @@ class Digit:
        
 
 if __name__ == "__main__":
-    digits = Digit(1234)
-    print(digits.to_string())
+    while True:
+        number = input("Enter the number for enterpreter please:\n")
+        digits = Digit(number)
+        print(digits.to_string())

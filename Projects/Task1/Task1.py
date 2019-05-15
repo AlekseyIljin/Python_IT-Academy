@@ -1,8 +1,7 @@
-class ChessDesk():
+class ChessDesk:
 
     def __init__(self, height = None, width = None):
-        self.width = width
-        self.height = height
+        self.height, self.width = height, width
 
 
     def draw(self):
@@ -10,10 +9,12 @@ class ChessDesk():
         
 Now restart an app and input the required variables
         """
-        if self.width < 41 and self.height < 21:
+        width_limit = 41
+        heigth_limit = 21
+        if self.height < heigth_limit and self.width < width_limit:
             counter = 1
             while counter < self.height + 1:
-                if counter%2==1:
+                if counter % 2 == 1:
                     print("* "*self.width)
                     counter += 1
                 else:
@@ -21,23 +22,12 @@ Now restart an app and input the required variables
                     counter += 1
         else:
             print("Symbol limit has reached")
-
-class Main():
-    def __init__(self):
-        pass
-    
-    def main():
-        test = ChessDesk()
-        if test.width and test.height:
-            test.draw()
-        else:
-            print(test.draw.__doc__)
-
             
             
             
 if __name__ == '__main__':
-    try:
-        x = Main.main()
-    except KeyboardInterrupt:
-        exit()
+    test = ChessDesk(20,40)
+        if test.width and test.height:
+            test.draw()
+        else:
+            print(test.draw.__doc__)
