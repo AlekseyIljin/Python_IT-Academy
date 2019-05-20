@@ -12,11 +12,22 @@ class Fibonachi:
                 self.fib_list.append(element)
             element, next = next, element + next
 
+    def presentation(self):
+        return "".join(str(self.fib_list))\
+            .replace("[","")\
+            .replace("]","")
 
-    def __str__(self):
-        print(self.fib_list)
 
 if __name__ == '__main__':
-    test = Fibonachi(44, 250)
-    test.fib_seq()
-    test.__str__()
+    start = input("Enter the start value: ")
+    end = input("Enter the end for sequence: ")
+    try:
+        if int(start) > 0 and int(start) > 0:
+            test = Fibonachi(int(start), int(end))
+            test.fib_seq()
+            print(test.presentation())
+        else:
+            raise ValueError
+    except:
+        print("Enter positive values, which are digits!")
+

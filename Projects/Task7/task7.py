@@ -11,11 +11,16 @@ class SequenceAnalize:
             counter += 1
             squad = counter ** 2
 
-    def __str__(self):
-        print(self.row)
+    def presentation(self):
+        return "".join(str(self.row)) \
+            .replace("[", "") \
+            .replace("]", "")
 
 if __name__ == '__main__':
-    limit = input("Please enter the limit for the natural sequence:\n")
-    seq = SequenceAnalize(int(limit))
-    seq.calc_sequence()
-    seq.__str__()
+    try:
+        limit = input("Please enter the limit for the natural sequence:\n")
+        seq = SequenceAnalize(int(limit))
+        seq.calc_sequence()
+        print(seq.presentation())
+    except:
+        print("Invalid data, inter not symbols")
