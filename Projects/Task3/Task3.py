@@ -5,9 +5,9 @@ class Triangle:
 
     def __init__(self, name, a, b, c):
         self.name = name.lower().title()
-        self.a = a
-        self.b = b
-        self.c = c
+        self.a = int(a)
+        self.b = int(b)
+        self.c = int(c)
 
     def square_calc(self):
         half_perim = (self.a + self.b + self.c) / 2
