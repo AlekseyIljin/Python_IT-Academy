@@ -16,10 +16,6 @@ HUNDREDS = {0: "", 1: "Сто", 2: "Двести", 3: "Триста", 4: "Чет
             5: "Пятьсот", 6: "Шестьсот", 7: "Семьсот",
             8: "Восемьсот", 9: "Девятьсот"}
 
-THOUSANDS = {0: "", 1: "Одна тысяча", 2: "Две тысячи", 3: "Три тысячи",
-             4: "Четыре тысячи", 5: "Пять тысяч", 6: "Шесть тысяч",
-             7: "Семь тысяч", 8: "Восемь тысяч", 9: "Девять тысяч"}
-
 ENDING = ["", "тыс", "млн", "млрд"]
 
 
@@ -63,54 +59,6 @@ class Digit:
             result += element
 
         return re.sub(r"\s+", ' ', result.strip().capitalize())
-        # num = self.number
-        # length_of_number = len(str(num))
-        # if num in UNITS:
-        #     if num == 0:
-        #         return "Ноль"
-        #     else:
-        #         return UNITS.get(num)
-        #
-        # elif num in TEENS:
-        #     return TEENS.get(num)
-        #
-        # elif num in TENS:
-        #     dec = num // 10
-        #     return TENS.get(dec)
-        #
-        # elif length_of_number == 2:
-        #     last_digit = num % 10
-        #     dec = num // 10
-        #     return TENS.get(dec) + " " \
-        #            + UNITS.get(last_digit).lower()
-        #
-        # elif length_of_number == 3:
-        #     return self.hundreds_calculation(num)
-        #
-        # elif length_of_number == 4:
-        #     thousand_count = num // 1000
-        #     return THOUSANDS.get(thousand_count) + " " \
-        #            + self.hundreds_calculation(num % 1000).lower()
-        #
-        # elif length_of_number == 5:
-        #     thousand_count = num // 1000
-        #     last_num_of_thous = thousand_count % 10
-        #     dec_of_thous = thousand_count // 10
-        #     if thousand_count in TEENS:
-        #         return TEENS.get(thousand_count) + " " \
-        #                + ENDING + " " \
-        #                + self.hundreds_calculation(num % 1000).lower()
-        #
-        #     elif dec_of_thous in TENS and last_num_of_thous != 0:
-        #         return TENS.get(dec_of_thous) + " " \
-        #                + THOUSANDS.get(last_num_of_thous).lower() + " " \
-        #                + self.hundreds_calculation(num % 1000).lower()
-        #     else:
-        #         return TENS.get(dec_of_thous) + " " \
-        #                + ENDING + " " \
-        #                + self.hundreds_calculation(num % 1000).lower()
-        # else:
-        #     return "Too much symbols"
 
 
 def main():
