@@ -7,14 +7,13 @@ class SequenceAnalize:
         counter = 0
         squad = 0
         while squad < self.n:
-            self.row.append(counter)
+            self.row.append(str(counter))
             counter += 1
             squad = counter ** 2
 
     def presentation(self):
-        return "".join(str(self.row)) \
-            .replace("[", "") \
-            .replace("]", "")
+        return ", ".join(self.row)
+
 
 if __name__ == '__main__':
     try:

@@ -8,14 +8,14 @@ class Fibonacci:
         element = 0
         next = 1
         while element < self.end:
-            if  element > self.start:
+            if element > self.start:
                 self.fib_list.append(element)
             element, next = next, element + next
 
     def presentation(self):
-        return "".join(str(self.fib_list))\
-            .replace("[","")\
-            .replace("]","")
+        return "".join(str(self.fib_list)) \
+            .replace("[", "") \
+            .replace("]", "")
 
 
 if __name__ == '__main__':
@@ -30,4 +30,3 @@ if __name__ == '__main__':
             raise ValueError
     except:
         print("Enter positive values, which are digits!")
-
