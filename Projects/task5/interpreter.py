@@ -70,7 +70,7 @@ def main():
         quiting = ("q", "quit", "exit")
         try:
             if number in quiting:
-                return False
+                break
             else:
                 digits = Digit(number)
                 print(digits.to_string())
