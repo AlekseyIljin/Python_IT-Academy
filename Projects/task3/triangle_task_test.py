@@ -1,5 +1,5 @@
 import unittest
-from triangle_task import Triangle
+from task3.triangle_task import Triangle
 
 
 class TestTriangle(unittest.TestCase):
@@ -33,7 +33,9 @@ class TestTriangle(unittest.TestCase):
 
     def test_str_for_wrong_output(self):
         expected = "[Test]: 41.23 cm"
-        result = Triangle("n", 2, 7, 9).__str__()
+        input_data = Triangle("Test", 12, 15, 7)
+        input_data.square_calc()
+        result = input_data.__str__()
         self.assertEqual(result, expected)
 
 
