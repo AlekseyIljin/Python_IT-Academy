@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a314ea51-b812-4353-b5b1-6ef73354cc58" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1/chess_desk.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1/chess_desk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task7/sequence.py" beforeDir="false" afterPath="$PROJECT_DIR$/task7/sequence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task8/fibonacci.py" beforeDir="false" afterPath="$PROJECT_DIR$/task8/fibonacci.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task5/interpreter.py" beforeDir="false" afterPath="$PROJECT_DIR$/task5/interpreter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,38 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task5/interpreter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task1/chess_desk.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task8/fibonacci.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="3" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task7/sequence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="361">
+              <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -60,10 +31,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Task1/task5_test.py" />
-        <option value="$PROJECT_DIR$/task5/interpreter.py" />
         <option value="$PROJECT_DIR$/task8/fibonacci.py" />
         <option value="$PROJECT_DIR$/task1/chess_desk.py" />
         <option value="$PROJECT_DIR$/task7/sequence.py" />
+        <option value="$PROJECT_DIR$/task5/test.py" />
+        <option value="$PROJECT_DIR$/task3/triangle_task_test.py" />
+        <option value="$PROJECT_DIR$/task3/triangle_task.py" />
+        <option value="$PROJECT_DIR$/task5/interpreter.py" />
       </list>
     </option>
   </component>
@@ -79,7 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -90,7 +63,7 @@
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projects" type="462c0819:PsiDirectoryNode" />
-              <item name="task1" type="462c0819:PsiDirectoryNode" />
+              <item name="task3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projects" type="b2602c69:ProjectViewProjectNode" />
@@ -111,6 +84,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,15 +92,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/task5" />
+      <recent name="$PROJECT_DIR$/Task1" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Task8" />
       <recent name="$PROJECT_DIR$/Task7" />
       <recent name="$PROJECT_DIR$/Task6" />
       <recent name="$PROJECT_DIR$/Task5" />
       <recent name="$PROJECT_DIR$/Task4" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Task1" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -141,28 +116,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sequence">
-    <configuration name="chess_desk" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Projects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task1/chess_desk.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.interpreter">
     <configuration name="interpreter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,7 +138,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="triangle_task" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,11 +146,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task3" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task7/sequence.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task3/triangle_task.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,11 +159,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for test.TestDigit" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task5" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.TestDigit&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for triangle_task_test.TestTriangle" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;triangle_task_test.TestTriangle&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/task3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;triangle_task_test.TestTriangle.test_str_for_wrong_output&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.sequence" />
-        <item itemvalue="Python.chess_desk" />
         <item itemvalue="Python.interpreter" />
+        <item itemvalue="Python tests.Unittests for triangle_task_test.TestTriangle" />
+        <item itemvalue="Python tests.Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" />
+        <item itemvalue="Python.triangle_task" />
+        <item itemvalue="Python tests.Unittests for test.TestDigit" />
       </list>
     </recent_temporary>
   </component>
@@ -238,8 +236,61 @@
       <option name="project" value="LOCAL" />
       <updated>1558615319906</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=".">
+      <created>1558630916184</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558630916184</updated>
+    </task>
+    <task id="LOCAL-00004" summary=".">
+      <created>1558708292544</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558708292544</updated>
+    </task>
+    <task id="LOCAL-00005" summary=".">
+      <created>1558709682242</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1558709682242</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_TestDigit - 2019.05.24 at 17h 23m 00s.xml">
+      <configuration name="Unittests for test.TestDigit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_TestDigit - 2019.05.24 at 17h 23m 59s.xml">
+      <configuration name="Unittests for test.TestDigit" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle - 2019.05.24 at 17h 25m 01s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle - 2019.05.24 at 17h 25m 43s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle_test_str_for_wrong_output - 2019.05.24 at 17h 26m 27s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle - 2019.05.24 at 17h 26m 32s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle_test_str_for_wrong_output - 2019.05.24 at 17h 27m 34s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle_test_str_for_wrong_output - 2019.05.24 at 17h 30m 00s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle_test_str_for_wrong_output - 2019.05.24 at 17h 30m 40s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle.test_str_for_wrong_output" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_triangle_task_test_TestTriangle - 2019.05.24 at 17h 30m 47s.xml">
+      <configuration name="Unittests for triangle_task_test.TestTriangle" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="32" width="1920" height="999" extended-state="6" />
@@ -250,7 +301,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -267,7 +318,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated structure" />
     <MESSAGE value="update task5 - interpreter.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="update task5 - interpreter.py" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -311,13 +363,7 @@
     <entry file="file://$PROJECT_DIR$/task2/README">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/task3/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/task4/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task5/README">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/task6/lucky_ticket.py">
@@ -329,10 +375,17 @@
     <entry file="file://$PROJECT_DIR$/task6/test_text.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/task5/interpreter.py">
+    <entry file="file://$PROJECT_DIR$/task1/chess_desk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="51" column="60" selection-start-line="51" selection-start-column="60" selection-end-line="51" selection-end-column="60" />
+        <state relative-caret-position="672">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task7/sequence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -343,17 +396,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task1/chess_desk.py">
+    <entry file="file://$PROJECT_DIR$/task5/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="984">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task7/sequence.py">
+    <entry file="file://$PROJECT_DIR$/task3/README">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/README">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task3/triangle_task_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="168">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task3/triangle_task.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task5/interpreter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="67" column="16" lean-forward="true" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
         </state>
       </provider>
     </entry>

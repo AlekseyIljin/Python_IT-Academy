@@ -60,6 +60,8 @@ class Digit:
             result += element
 
         result = re.sub(r"\s+", ' ', result.strip().capitalize())
+        print(result[-1:-3])
+        print(ENDING[0])
         if result == "":
             return "Ноль"
         else:
